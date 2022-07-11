@@ -13,6 +13,10 @@
 		5569A544287B0E0500A17A03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5569A542287B0E0500A17A03 /* Main.storyboard */; };
 		5569A546287B0E0700A17A03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5569A545287B0E0700A17A03 /* Assets.xcassets */; };
 		5569A549287B0E0700A17A03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5569A547287B0E0700A17A03 /* LaunchScreen.storyboard */; };
+		5569A551287B111F00A17A03 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569A550287B111F00A17A03 /* User.swift */; };
+		5569A553287B148F00A17A03 /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569A552287B148F00A17A03 /* Datas.swift */; };
+		5569A555287B3D8E00A17A03 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569A554287B3D8E00A17A03 /* UserView.swift */; };
+		556DA18B287C672000916D6A /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556DA18A287C672000916D6A /* RoundedImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5569A545287B0E0700A17A03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5569A548287B0E0700A17A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5569A54A287B0E0700A17A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5569A550287B111F00A17A03 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5569A552287B148F00A17A03 /* Datas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datas.swift; sourceTree = "<group>"; };
+		5569A554287B3D8E00A17A03 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		556DA18A287C672000916D6A /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				5569A545287B0E0700A17A03 /* Assets.xcassets */,
 				5569A547287B0E0700A17A03 /* LaunchScreen.storyboard */,
 				5569A54A287B0E0700A17A03 /* Info.plist */,
+				5569A550287B111F00A17A03 /* User.swift */,
+				5569A552287B148F00A17A03 /* Datas.swift */,
+				5569A554287B3D8E00A17A03 /* UserView.swift */,
+				556DA18A287C672000916D6A /* RoundedImage.swift */,
 			);
 			path = "POO-UIKit";
 			sourceTree = "<group>";
@@ -138,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5569A551287B111F00A17A03 /* User.swift in Sources */,
+				5569A555287B3D8E00A17A03 /* UserView.swift in Sources */,
+				556DA18B287C672000916D6A /* RoundedImage.swift in Sources */,
 				5569A541287B0E0500A17A03 /* ViewController.swift in Sources */,
+				5569A553287B148F00A17A03 /* Datas.swift in Sources */,
 				5569A53D287B0E0500A17A03 /* AppDelegate.swift in Sources */,
 				5569A53F287B0E0500A17A03 /* SceneDelegate.swift in Sources */,
 			);

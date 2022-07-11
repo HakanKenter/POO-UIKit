@@ -1,24 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="POO_UIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCC-Jd-ieG" customClass="UserView" customModule="POO_UIKit" customModuleProvider="target">
+                                <rect key="frame" x="40" y="137" width="334" height="685"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prénom et nom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ml4-Vg-coz">
+                                        <rect key="frame" x="8" y="8" width="318" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="mOv-Ic-fkT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spider" translatesAutoresizingMaskIntoConstraints="NO" id="3b7-xB-gxg" customClass="RoundedImage" customModule="POO_UIKit" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="63" width="318" height="318"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="3b7-xB-gxg" secondAttribute="height" id="CNq-6Z-bnI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BT-db-GPF">
+                                        <rect key="frame" x="8" y="644" width="318" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Fq7-ra-Vwe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstItem="0BT-db-GPF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3b7-xB-gxg" secondAttribute="bottom" constant="15" id="Bs3-P0-akH"/>
+                                    <constraint firstItem="Ml4-Vg-coz" firstAttribute="leading" secondItem="OCC-Jd-ieG" secondAttribute="leading" constant="8" id="DQZ-8V-fLA"/>
+                                    <constraint firstAttribute="bottom" secondItem="0BT-db-GPF" secondAttribute="bottom" constant="20" id="GwX-29-pSz"/>
+                                    <constraint firstItem="3b7-xB-gxg" firstAttribute="top" secondItem="Ml4-Vg-coz" secondAttribute="bottom" constant="15" id="Ksm-Gn-s5E"/>
+                                    <constraint firstItem="0BT-db-GPF" firstAttribute="leading" secondItem="OCC-Jd-ieG" secondAttribute="leading" constant="8" id="Lxf-Pc-zhn"/>
+                                    <constraint firstItem="Ml4-Vg-coz" firstAttribute="top" secondItem="OCC-Jd-ieG" secondAttribute="top" constant="8" id="Qai-xc-2Vr"/>
+                                    <constraint firstAttribute="trailing" secondItem="3b7-xB-gxg" secondAttribute="trailing" constant="8" id="RCr-Lh-5bZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="0BT-db-GPF" secondAttribute="trailing" constant="8" id="swa-Gw-Zgg"/>
+                                    <constraint firstItem="3b7-xB-gxg" firstAttribute="leading" secondItem="OCC-Jd-ieG" secondAttribute="leading" constant="8" id="y84-dh-Kq0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ml4-Vg-coz" secondAttribute="trailing" constant="8" id="zQR-f4-blx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="secondaryLabelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="ageLbl" destination="0BT-db-GPF" id="VXB-TZ-dzf"/>
+                                    <outlet property="imageV" destination="3b7-xB-gxg" id="DUp-Bt-Ohz"/>
+                                    <outlet property="nameLabel" destination="Ml4-Vg-coz" id="2WS-3Z-ZEb"/>
+                                </connections>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PNF-9V-W9Y">
+                                <rect key="frame" x="40" y="59" width="334" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spider" translatesAutoresizingMaskIntoConstraints="NO" id="itu-x7-jTT" customClass="RoundedImage" customModule="POO_UIKit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="3uA-YD-xv1"/>
+                                            <constraint firstAttribute="width" constant="60" id="vXh-1F-5cX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mario" translatesAutoresizingMaskIntoConstraints="NO" id="EnR-En-vvY" customClass="RoundedImage" customModule="POO_UIKit" customModuleProvider="target">
+                                        <rect key="frame" x="91.5" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="5fr-gE-e1z"/>
+                                            <constraint firstAttribute="height" constant="60" id="c1m-CU-T24"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joker" translatesAutoresizingMaskIntoConstraints="NO" id="HAA-vM-L7o" customClass="RoundedImage" customModule="POO_UIKit" customModuleProvider="target">
+                                        <rect key="frame" x="182.5" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="TUQ-bU-te9"/>
+                                            <constraint firstAttribute="width" constant="60" id="zPd-Pb-GY1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="groot" translatesAutoresizingMaskIntoConstraints="NO" id="3xW-b0-a21" customClass="RoundedImage" customModule="POO_UIKit" customModuleProvider="target">
+                                        <rect key="frame" x="274" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="040-vz-hKn"/>
+                                            <constraint firstAttribute="width" constant="60" id="OPd-O6-EEv"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OCC-Jd-ieG" secondAttribute="trailing" constant="40" id="1aB-LN-YqX"/>
+                            <constraint firstItem="OCC-Jd-ieG" firstAttribute="top" secondItem="PNF-9V-W9Y" secondAttribute="bottom" constant="18" id="3Jz-e9-1Ht"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OCC-Jd-ieG" secondAttribute="bottom" constant="40" id="5mV-2w-xWx"/>
+                            <constraint firstItem="PNF-9V-W9Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="PSD-Xu-YHz"/>
+                            <constraint firstItem="PNF-9V-W9Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="cMB-IX-svb"/>
+                            <constraint firstItem="OCC-Jd-ieG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="gIf-op-Kde"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PNF-9V-W9Y" secondAttribute="trailing" constant="40" id="vpd-rY-s0Y"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainView" destination="OCC-Jd-ieG" id="hNq-fM-GRT"/>
+                        <outletCollection property="topImages" destination="itu-x7-jTT" collectionClass="NSMutableArray" id="KZI-2p-gfj"/>
+                        <outletCollection property="topImages" destination="EnR-En-vvY" collectionClass="NSMutableArray" id="tyb-Dj-q2F"/>
+                        <outletCollection property="topImages" destination="HAA-vM-L7o" collectionClass="NSMutableArray" id="SKv-K9-tOr"/>
+                        <outletCollection property="topImages" destination="3xW-b0-a21" collectionClass="NSMutableArray" id="nJ1-zj-HMl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="groot" width="3121" height="4682"/>
+        <image name="joker" width="3456" height="5184"/>
+        <image name="mario" width="1280" height="884"/>
+        <image name="spider" width="4000" height="5000"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
